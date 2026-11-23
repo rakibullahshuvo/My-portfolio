@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Rakib Ullah – Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { ink: '#0f1419', panel: '#161d26', line: '#27313d', sand: '#e8e2d4', mute: '#8d98a5', teal: '#7dd3c0', amber: '#f0a868' },
+  fontFamily: { sans: ['"Bricolage Grotesque"', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+}}};
+</script>
+<style>
+  :root { color-scheme: dark; box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  html { scroll-padding-top: 5rem; }
+  body { background: #0f1419; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #7dd3c0; outline-offset: 3px; border-radius: 4px; }
+  .layer { transition: transform .25s ease; }
+  .layer:hover { transform: translateX(8px); }
+  @media (prefers-reduced-motion: reduce) { .layer { transition: none; } .layer:hover { transform: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body class="bg-ink text-sand font-sans antialiased">
+
+<header class="sticky top-0 z-20 border-b border-line bg-ink/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
+    <a href="#top" class="font-bold tracking-tight">Rakib Ullah</a>
+    <ul class="flex gap-5 text-sm text-mute">
+      <li><a class="hover:text-sand" href="#about">About</a></li>
+      <li><a class="hover:text-sand" href="#skills">Skills</a></li>
+      <li><a class="hover:text-sand" href="#projects">Projects</a></li>
+      <li><a class="hover:text-sand" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top" class="mx-auto max-w-5xl px-5">
+
+  <!-- Hero -->
+  <section class="grid items-center gap-12 py-16 md:grid-cols-5 md:py-24">
+    <div class="md:col-span-3">
+      <p class="text-mute">Dhaka, Bangladesh</p>
+      <h1 class="mt-3 text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">Md Rakib Ullah</h1>
+      <p class="mt-5 max-w-xl text-xl leading-relaxed text-sand/90">I build web apps, turn data into dashboards, and keep the servers and networks underneath them running.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#projects" class="rounded-md bg-teal px-5 py-3 font-bold text-ink hover:bg-teal/90">See my work</a>
+        <a href="#contact" class="rounded-md border border-line px-5 py-3 font-medium hover:border-mute">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- Stack diagram: the one memorable element -->
+    <div class="md:col-span-2" aria-label="My stack, from interface to infrastructure">
+      <div class="space-y-2">
+        <div class="layer rounded-md border border-teal/40 bg-teal/10 px-4 py-3"><p class="font-bold text-teal">Interface</p><p class="text-sm text-mute">HTML, CSS, Tailwind, JavaScript, HTMX</p></div>
+        <div class="layer rounded-md border border-amber/40 bg-amber/10 px-4 py-3"><p class="font-bold text-amber">Logic and data</p><p class="text-sm text-mute">Python, Power BI, Excel</p></div>
+        <div class="layer rounded-md border border-line bg-panel px-4 py-3"><p class="font-bold">Infrastructure</p><p class="text-sm text-mute">System administration, networking</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="border-t border-line py-14">
+    <h2 class="text-3xl font-bold tracking-tight">About</h2>
+    <div class="mt-5 max-w-2xl space-y-4 text-lg leading-relaxed text-sand/90">
+      <p>I'm a software engineer with two years of hands-on experience. My work covers the full path from a server room to a browser tab: configuring systems and networks, writing Python back ends, and building interfaces people can use.</p>
+      <p>I like HTMX because it keeps pages fast and simple, and Power BI because a good report answers a question before anyone asks it.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="border-t border-line py-14">
+    <h2 class="text-3xl font-bold tracking-tight">Skills</h2>
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <h3 class="text-xl font-bold text-teal">Build</h3>
+        <ul class="mt-3 space-y-1.5 text-sand/90"><li>Python</li><li>HTML and CSS</li><li>Tailwind CSS</li><li>JavaScript</li><li>HTMX</li></ul>
+      </div>
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <h3 class="text-xl font-bold text-amber">Analyze</h3>
+        <ul class="mt-3 space-y-1.5 text-sand/90"><li>Power BI dashboards</li><li>Excel reporting</li><li>Data cleaning with Python</li></ul>
+      </div>
+      <div class="rounded-xl border border-line bg-panel p-6">
+        <h3 class="text-xl font-bold">Run</h3>
+        <ul class="mt-3 space-y-1.5 text-sand/90"><li>System administration</li><li>Networking</li><li>Troubleshooting and uptime</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="border-t border-line py-14">
+    <h2 class="text-3xl font-bold tracking-tight">Projects</h2>
+    <p class="mt-2 text-mute">Replace these three with your real projects.</p>
+    <div class="mt-8 divide-y divide-line border-y border-line">
+      <article class="grid gap-2 py-6 md:grid-cols-4">
+        <h3 class="text-xl font-bold md:col-span-1">Sales dashboard</h3>
+        <p class="text-sand/90 md:col-span-2">A Power BI report that tracks revenue, targets, and trends in one view for the management team.</p>
+        <p class="text-sm text-mute md:text-right">Power BI, Excel</p>
+      </article>
+      <article class="grid gap-2 py-6 md:grid-cols-4">
+        <h3 class="text-xl font-bold md:col-span-1">Internal web tool</h3>
+        <p class="text-sand/90 md:col-span-2">A Python and HTMX app that replaces a manual spreadsheet process with a fast, form-based workflow.</p>
+        <p class="text-sm text-mute md:text-right">Python, HTMX, Tailwind</p>
+      </article>
+      <article class="grid gap-2 py-6 md:grid-cols-4">
+        <h3 class="text-xl font-bold md:col-span-1">Network and server setup</h3>
+        <p class="text-sand/90 md:col-span-2">Office network and server configuration with monitoring, backups, and documented recovery steps.</p>
+        <p class="text-sm text-mute md:text-right">Networking, SysAdmin</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-line py-14">
+    <h2 class="text-3xl font-bold tracking-tight">Contact</h2>
+    <p class="mt-4 max-w-xl text-lg text-sand/90">Have a project or a role in mind? Send me a message and I'll reply within a day or two.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="mailto:your-email@example.com" class="rounded-md bg-teal px-5 py-3 font-bold text-ink hover:bg-teal/90">Email me</a>
+      <a href="https://github.com/" class="rounded-md border border-line px-5 py-3 font-medium hover:border-mute">GitHub</a>
+      <a href="https://linkedin.com/" class="rounded-md border border-line px-5 py-3 font-medium hover:border-mute">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-line py-8 text-center text-sm text-mute">© 2026 Md Rakib Ullah</footer>
+</body>
+</html>
